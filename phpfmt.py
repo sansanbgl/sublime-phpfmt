@@ -16,7 +16,7 @@ if int(sublime.version()) >= 3000:
 else:
     from diff_match_patch.python2.diff_match_patch import diff_match_patch
 
-def print_debug(msg):
+def print_debug(msg, extra_msg = None):
      if getSetting(sublime.active_window().active_view(), sublime.load_settings('phpfmt.sublime-settings'), "debug", False):
         print(msg)
 
